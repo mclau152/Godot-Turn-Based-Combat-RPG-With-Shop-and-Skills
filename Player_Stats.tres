@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cqgmxwefkgmyk"]
+
+[ext_resource type="Script" path="res://PlayerStats.gd" id="1_tg8lm"]
+
+[resource]
+script = ExtResource("1_tg8lm")
+MaxHP = 100
+CurrentHP = 100
+MaxMP = 50
+CurrentMP = 50
+Strength = 10
+Speed = 10
+Wisdom = 10
+WeaponDamage = 5
+Armor = 5

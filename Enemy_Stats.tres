@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dnop78cmj6kir"]
+
+[ext_resource type="Script" path="res://EnemyStats.gd" id="1_v1uvc"]
+
+[resource]
+script = ExtResource("1_v1uvc")
+EnemyMaxHP = 100
+EnemyCurrentHP = 100
+EnemyMaxMP = 50
+EnemyCurrentMP = 50
+EnemyStrength = 10
+EnemySpeed = 10
+EnemyWisdom = 10
+EnemyWeaponDamage = 5
+EnemyArmor = 5
+EnemyExperience = 50
+EnemyGold = 20

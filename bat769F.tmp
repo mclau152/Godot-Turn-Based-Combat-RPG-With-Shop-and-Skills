@@ -1,0 +1,167 @@
+[gd_scene load_steps=16 format=3 uid="uid://ctt2q7h764fd0"]
+
+[ext_resource type="Script" path="res://battle.gd" id="1_t17ni"]
+[ext_resource type="Texture2D" uid="uid://dnn0cgdbmqu8d" path="res://icon.svg" id="1_uqos5"]
+
+[sub_resource type="Gradient" id="Gradient_3nxet"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_wksta"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_xya07"]
+width = 256
+height = 24
+color_ramp = SubResource("Gradient_3nxet")
+noise = SubResource("FastNoiseLite_wksta")
+
+[sub_resource type="Gradient" id="Gradient_e62k3"]
+colors = PackedColorArray(0, 0.531717, 0.346025, 1, 1.08294e-07, 0.24356, 0.165881, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_x8dy0"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_1vtd3"]
+width = 256
+height = 24
+color_ramp = SubResource("Gradient_e62k3")
+noise = SubResource("FastNoiseLite_x8dy0")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_syyjq"]
+width = 256
+height = 24
+color_ramp = SubResource("Gradient_3nxet")
+noise = SubResource("FastNoiseLite_wksta")
+
+[sub_resource type="Gradient" id="Gradient_xnu6i"]
+colors = PackedColorArray(3.7542e-06, 0.483696, 0.677929, 1, 6.13667e-07, 0.224417, 0.300513, 1)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8rj4k"]
+width = 256
+height = 24
+color_ramp = SubResource("Gradient_xnu6i")
+noise = SubResource("FastNoiseLite_x8dy0")
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8did5"]
+width = 256
+height = 24
+color_ramp = SubResource("Gradient_3nxet")
+noise = SubResource("FastNoiseLite_wksta")
+
+[sub_resource type="Gradient" id="Gradient_f50mk"]
+colors = PackedColorArray(2.55093e-06, 0.531767, 0.345419, 1, 0, 0.243103, 0.170732, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_o4ee1"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_h1ioy"]
+width = 256
+height = 24
+color_ramp = SubResource("Gradient_f50mk")
+noise = SubResource("FastNoiseLite_o4ee1")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_t17ni")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(-397, 7)
+texture = ExtResource("1_uqos5")
+
+[node name="Enemy" type="Sprite2D" parent="."]
+position = Vector2(433, 7)
+texture = ExtResource("1_uqos5")
+
+[node name="PlayerHPBar" type="TextureProgressBar" parent="."]
+offset_left = -489.0
+offset_top = -206.0
+offset_right = -233.0
+offset_bottom = -166.0
+value = 100.0
+texture_under = SubResource("NoiseTexture2D_xya07")
+texture_progress = SubResource("NoiseTexture2D_1vtd3")
+
+[node name="PlayerMPBar" type="TextureProgressBar" parent="."]
+offset_left = -494.0
+offset_top = 239.0
+offset_right = -238.0
+offset_bottom = 279.0
+value = 100.0
+texture_under = SubResource("NoiseTexture2D_syyjq")
+texture_progress = SubResource("NoiseTexture2D_8rj4k")
+
+[node name="EnemyHPBar" type="TextureProgressBar" parent="."]
+offset_left = 258.0
+offset_top = -204.0
+offset_right = 514.0
+offset_bottom = -164.0
+value = 100.0
+texture_under = SubResource("NoiseTexture2D_8did5")
+texture_progress = SubResource("NoiseTexture2D_h1ioy")
+
+[node name="PlayerHPLabel" type="Label" parent="."]
+offset_left = -488.0
+offset_top = -236.0
+offset_right = -448.0
+offset_bottom = -213.0
+text = "HP:"
+
+[node name="EnemyHPLabel" type="Label" parent="."]
+offset_left = 264.0
+offset_top = -237.0
+offset_right = 304.0
+offset_bottom = -214.0
+text = "HP:"
+
+[node name="PlayerMPLabel" type="Label" parent="."]
+offset_left = -488.0
+offset_top = 209.0
+offset_right = -448.0
+offset_bottom = 232.0
+text = "MP:"
+
+[node name="AttackButton" type="Button" parent="."]
+offset_left = -501.0
+offset_top = 156.0
+offset_right = -443.0
+offset_bottom = 187.0
+text = "Attack"
+
+[node name="HPPotionButton" type="Button" parent="."]
+offset_left = -402.0
+offset_top = 157.0
+offset_right = -317.0
+offset_bottom = 188.0
+text = "HP Potion"
+
+[node name="MPPotionButton" type="Button" parent="."]
+offset_left = -279.0
+offset_top = 157.0
+offset_right = -191.0
+offset_bottom = 188.0
+text = "MP Potion"
+
+[node name="StabButton" type="Button" parent="."]
+offset_left = 36.0
+offset_top = 155.0
+offset_right = 79.0
+offset_bottom = 186.0
+text = "Stab"
+
+[node name="StarsButton" type="Button" parent="."]
+offset_left = 36.0
+offset_top = 226.0
+offset_right = 84.0
+offset_bottom = 257.0
+text = "Stars"
+
+[node name="StrengthSlashButton" type="Button" parent="."]
+offset_left = 125.0
+offset_top = 153.0
+offset_right = 245.0
+offset_bottom = 184.0
+text = "Strength Slash"
+
+[node name="EnergyBlastButton" type="Button" parent="."]
+offset_left = 126.0
+offset_top = 227.0
+offset_right = 230.0
+offset_bottom = 258.0
+text = "Energy Blast"

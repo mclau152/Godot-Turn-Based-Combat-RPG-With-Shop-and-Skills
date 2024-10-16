@@ -1,0 +1,158 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5k0tei4iv28k"]
+
+[ext_resource type="Script" path="res://shop.gd" id="1_23oss"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_23oss")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="DaggerButton" type="Button" parent="."]
+offset_left = 226.0
+offset_top = -222.0
+offset_right = 289.0
+offset_bottom = -191.0
+disabled = true
+text = "Dagger"
+
+[node name="KatanaButton" type="Button" parent="."]
+offset_left = 231.0
+offset_top = -142.0
+offset_right = 294.0
+offset_bottom = -111.0
+disabled = true
+text = "Katana"
+
+[node name="LeatherArmorButton" type="Button" parent="."]
+offset_left = -405.0
+offset_top = 93.0
+offset_right = -283.0
+offset_bottom = 124.0
+disabled = true
+text = "Leather Armor"
+
+[node name="IronArmorButton" type="Button" parent="."]
+offset_left = -390.0
+offset_top = 163.0
+offset_right = -296.0
+offset_bottom = 194.0
+disabled = true
+text = "Iron Armor"
+
+[node name="LeatherHeadbandButton" type="Button" parent="."]
+offset_left = -402.0
+offset_top = -229.0
+offset_right = -250.0
+offset_bottom = -198.0
+disabled = true
+text = "Leather Headband"
+
+[node name="IronHeadbandButton" type="Button" parent="."]
+offset_left = -388.0
+offset_top = -146.0
+offset_right = -264.0
+offset_bottom = -115.0
+disabled = true
+text = "Iron Headband"
+
+[node name="WoodenShieldButton" type="Button" parent="."]
+offset_left = 214.0
+offset_top = 89.0
+offset_right = 338.0
+offset_bottom = 120.0
+disabled = true
+text = "Wooden Shield"
+
+[node name="IronShieldButton" type="Button" parent="."]
+offset_left = 232.0
+offset_top = 162.0
+offset_right = 323.0
+offset_bottom = 193.0
+disabled = true
+text = "Iron Shield"
+
+[node name="GoldLabel" type="Label" parent="."]
+offset_left = -63.0
+offset_top = -285.0
+offset_right = -22.0
+offset_bottom = -262.0
+text = "Gold:"
+
+[node name="StatPointsButton" type="Button" parent="."]
+offset_left = -89.0
+offset_top = 252.0
+offset_right = 90.0
+offset_bottom = 283.0
+text = "Go Back to Stat Points"
+
+[node name="BuyHPPotionButton" type="Button" parent="."]
+offset_left = -149.0
+offset_top = 5.0
+offset_right = -31.0
+offset_bottom = 36.0
+text = "Buy HP Potion"
+
+[node name="BuyMPPotionButton" type="Button" parent="."]
+offset_left = 20.0
+offset_top = 5.0
+offset_right = 141.0
+offset_bottom = 36.0
+text = "Buy MP Potion"
+
+[node name="WeaponDamageLabel" type="Label" parent="."]
+offset_left = 199.0
+offset_top = -86.0
+offset_right = 331.0
+offset_bottom = -63.0
+text = "Weapon Damage"
+
+[node name="ShieldDefenceLabel" type="Label" parent="."]
+offset_left = 218.0
+offset_top = 211.0
+offset_right = 333.0
+offset_bottom = 234.0
+text = "Shield Defence"
+
+[node name="ArmorDefenceLabel" type="Label" parent="."]
+offset_left = -398.0
+offset_top = 213.0
+offset_right = -283.0
+offset_bottom = 236.0
+text = "Amor Defence"
+
+[node name="HeadbandDefenceLabel" type="Label" parent="."]
+offset_left = -394.0
+offset_top = -80.0
+offset_right = -246.0
+offset_bottom = -57.0
+text = "Headband Defence"
+
+[node name="HPPotionsLabel" type="Label" parent="."]
+offset_left = -152.0
+offset_top = -34.0
+offset_right = -112.0
+offset_bottom = -11.0
+
+[node name="MPPotionsLabel" type="Label" parent="."]
+offset_left = 32.0
+offset_top = -32.0
+offset_right = 72.0
+offset_bottom = -9.0
+
+[node name="HPPotionCostLabel" type="Label" parent="."]
+offset_left = -180.0
+offset_top = 40.0
+offset_right = -5.0
+offset_bottom = 89.0
+text = "HP Potions
+ cost 25 Gold"
+horizontal_alignment = 1
+
+[node name="MPPotionCostLabel" type="Label" parent="."]
+offset_left = -11.0
+offset_top = 40.0
+offset_right = 175.0
+offset_bottom = 89.0
+text = "MP Potions 
+cost 15 Gold"
+horizontal_alignment = 1
